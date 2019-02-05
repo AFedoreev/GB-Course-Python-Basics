@@ -54,8 +54,8 @@ def process_user_choice(choice, person):
 def start():
     # ввод в цикле с проверкой, допускается ввод номера карты с пробелами
     card_number, pin_code = '', ''
-    card_num_pattern = '[0-9]{16}'
-    pin_pattern = '[0-9]{4}'
+    card_num_pattern = '^[0-9]{16}$'
+    pin_pattern = '^[0-9]{4}$'
     while not re.match(card_num_pattern, str(card_number).replace(' ', '')) or not re.match(pin_pattern, pin_code):
         try:  # получал ValueError при полном отсутствии пробелов во вводе, можно было добавить пробел искуственно, но
             # решил попробовать через try/except
