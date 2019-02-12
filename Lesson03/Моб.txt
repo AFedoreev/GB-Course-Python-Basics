@@ -1,0 +1,4 @@
+name / Моб
+health / 500
+damage / 30
+armor / 1.2

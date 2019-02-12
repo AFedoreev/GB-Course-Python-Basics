@@ -1,0 +1,4 @@
+name / Герой
+health / 250
+damage / 70
+armor / 1.2
